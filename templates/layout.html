@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <title>DirectUpload</title>
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery.fileupload.js"></script>
+  <script type="text/javascript" src="static/js/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="static/js/app.js"></script>
+
+
+  </script>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Direct Upload</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list"></ul>
+          </div>
+        </div>
+        <div class="span9">
+          {% block body %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
