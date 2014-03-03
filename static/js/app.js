@@ -42,7 +42,10 @@ $(function() {
         // Here we get the file url on s3 in an xml doc
         var url = decodeURIComponent($(data).find('Location').text())
 
-        $('#photo_file').val(url) // Update the real input in the other form
+        $('#preview').attr('src', url);
+        $('#link').attr('href', url);
+        $('#link').text(url);
+        $('#link').show();
       },
       done: function (event, data) {
         $('.progress').fadeOut(300, function() {
